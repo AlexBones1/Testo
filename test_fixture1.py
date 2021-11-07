@@ -9,6 +9,7 @@ class TestMainPage1():
     def setup_class(self):
         print("\nstart browser for test suite..")
         self.browser = webdriver.Chrome()
+        self.browser.implicitly_wait(30)
 
     @classmethod
     def teardown_class(self):
